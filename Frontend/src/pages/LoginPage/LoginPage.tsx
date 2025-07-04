@@ -26,7 +26,7 @@ const LoginPage: React.FC = () => {
   const onSubmit = async (data: LoginPropsInput) => {
     try {
       const cleanPhone = data.phoneNumber.replace(/\D/g, '');
-      const response = await fetch('http://localhost:8080/api/auth/login', {
+      const response = await fetch('https://your-backend-production.up.railway.app/api/auth/sign-up', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
