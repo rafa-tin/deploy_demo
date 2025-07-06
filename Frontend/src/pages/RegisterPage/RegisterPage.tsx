@@ -24,6 +24,7 @@ const RegistrationPage: React.FC = () => {
   const { register, handleSubmit, formState, watch } = useForm<RegistrationPropsInput>({
     mode: 'onChange',
   });
+  
   const navigate = useNavigate();
   const phoneError = formState.errors['phoneNumber']?.message;
   const fullNameError = formState.errors['fullName']?.message;
