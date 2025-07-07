@@ -26,7 +26,7 @@ const LoginPage: React.FC = () => {
   const onSubmit = async (data: LoginPropsInput) => {
     try {
       const cleanPhone = data.phoneNumber.replace(/\D/g, '');
-      const response = await fetch('https://8118-31-148-166-6.ngrok-free.app/api/auth/login', {
+      const response = await fetch('https://cb5a-31-148-166-6.ngrok-free.app/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
